@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Filter Implementation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: honeydew;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input, button {
+            margin: 10px 0;
+        }
+        .bit-array {
+            display: flex;
+            margin: 10px 0;
+        }
+        .bit {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            display: inline-block;
+            background-color: #f0f0f0;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        .bit.active {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Bloom Filter Implementation</h2>
+        <div>
+            <input type="text" id="element" placeholder="Enter element">
+            <button onclick="addElement()">Add Element</button>
+            <button onclick="checkElement()">Check Element</button>
+        </div>
+        <h3>Bit Array</h3>
+        <div id="bitArray" class="bit-array"></div>
+        <h3>Result</h3>
+        <p id="result"></p>
+    </div>
+
+    <script src="bloomfilter.js"></script>
+</body>
+</html>
